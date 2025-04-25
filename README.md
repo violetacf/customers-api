@@ -23,7 +23,7 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone git@github.com:topi-team/take-home-exercise-frontend.git
 cd take-home-exercise-frontend
 
 # Install dependencies
@@ -77,14 +77,3 @@ npm install
   npm run build-storybook
   ```
   Builds Storybook as a static web application
-
-## 📁 Project Structure
-
-- `/src` - Source code of the application
-  - `/ui` - UI components
-  - `/stories` - Storybook stories
-  - `/storybook-helpers` - Utilities for Storybook
-  - `App.tsx` - Main application component
-  - `main.tsx` - Application entry point
-- `/public` - Static assets
-- `/.storybook` - Storybook configuration

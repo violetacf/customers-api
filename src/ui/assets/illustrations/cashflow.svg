@@ -1,0 +1,15 @@
+<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M52.5 47.5075H13.3389V46.0917H48.5393C50.0343 46.0917 51.237 44.8629 51.237 43.3533V16.881H52.5V47.5075Z" fill="#FF0062" stroke="#FF0062"/>
+<path d="M7.72534 30.063C10.3655 25.6599 16.2406 22.7344 21.035 27.3517C25.8802 32.0207 29.6881 39.2754 35.4109 38.1303C42.2507 36.7636 39.3204 28.5854 45.4567 29.7157" stroke="#FF0062" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M16.8208 25.2758V45.5992" stroke="#FF0062" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M31.1316 37.7016V45.599" stroke="#FF0062" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M38.2905 37.1108V45.5992" stroke="#FF0062" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M24.0813 30.7573V45.4661" stroke="#FF0062" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M45.4495 15.4279V42.9099C45.4495 44.3948 46.6317 45.599 48.0896 45.599C49.5475 45.599 50.7298 44.3948 50.7298 42.9099V15.4279C50.7371 13.943 49.5548 12.7388 48.0896 12.7388C46.6317 12.7388 45.4495 13.943 45.4495 15.4279Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M48.0896 45.5917C49.5517 45.5917 50.737 44.3844 50.737 42.8952C50.737 41.4059 49.5517 40.1987 48.0896 40.1987C46.6274 40.1987 45.4421 41.4059 45.4421 42.8952C45.4421 44.3844 46.6274 45.5917 48.0896 45.5917Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M45.4422 16.381H9.85059V45.5991H48.0896" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M14.1155 19.6462H20.3025" stroke="#002BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M23.4939 19.6462H29.6809" stroke="#002BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M7.72534 30.063C10.3655 25.6599 16.2406 22.7344 21.035 27.3517" stroke="#002BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M37.1086 27.5274V27.5288C37.1086 29.7146 35.3722 31.4762 33.2422 31.4762C31.1183 31.4762 29.3757 29.7209 29.3757 27.5288C29.3757 25.343 31.1121 23.5815 33.2422 23.5815C35.3735 23.5815 37.1151 25.3441 37.1086 27.5274ZM32.7527 30.9111L33.7315 30.9116C34.0335 29.4717 34.7305 28.4172 35.5302 27.9734L36.3181 27.5362L35.5302 27.099C34.73 26.655 34.0334 25.6075 33.7316 24.1614L32.7528 24.1609C32.4509 25.6008 31.7539 26.6553 30.9542 27.099L30.1662 27.5362L30.9542 27.9734C31.7543 28.4174 32.4509 29.465 32.7527 30.9111Z" fill="#FF0062" stroke="#FF0062"/>
+</svg>

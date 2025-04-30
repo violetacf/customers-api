@@ -47,7 +47,6 @@ export const SearchInput: FC<SearchInputProps> = ({
     reset(defaultValues);
   }, [defaultValues, reset]);
 
-  // TODO: TOP-2202 - refactor/simplify this component
   const watchedValue = watch("searchProduct");
   const [debouncedValue] = useDebounce(watchedValue, 500);
 

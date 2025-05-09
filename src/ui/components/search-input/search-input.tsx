@@ -41,7 +41,8 @@ export const SearchInput: FC<SearchInputProps> = ({
     defaultValues,
   });
 
-  const { handleSubmit, watch, reset } = formMethods;
+  // Added register to save the input value for the fetch
+  const { handleSubmit, watch, reset, register } = formMethods;
 
   useEffect(() => {
     reset(defaultValues);
@@ -76,10 +77,11 @@ export const SearchInput: FC<SearchInputProps> = ({
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Container>
           <Input
+            {...register("searchProduct")}
             name="searchProduct"
             type="search"
             placeholder={placeholder}
-            isDisabled={isDisabled}
+            disabled={isDisabled}
           />
           <SearchIcon name="magnifyingGlass" />
         </Container>

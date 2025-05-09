@@ -4,6 +4,7 @@ import { IconName } from "$/ui/components/icon/icon";
 import { DropdownOption, Menu } from "./menu/menu";
 import { Toggle } from "./toggle/toggle";
 import { ToggleWithLabel } from "./toggle-with-label/toggle-with-label";
+import { Text, TextTypography } from "$/ui/components/text/text";
 
 type BaseDropdownProps = {
   icon: IconName;
@@ -12,7 +13,8 @@ type BaseDropdownProps = {
   ariaLabel?: string;
   isOpenByDefault?: boolean;
   testId?: string;
-  label?: string;
+  label?: React.ReactNode;
+  typography?: TextTypography;
 };
 
 export type DropdownProps =
@@ -35,6 +37,7 @@ export const Dropdown: FC<DropdownProps> = ({
   testId,
   label,
   children,
+  typography,
 }: DropdownProps) => {
   const [isOpen, setIsOpen] = useState(isOpenByDefault || false);
 
@@ -45,7 +48,7 @@ export const Dropdown: FC<DropdownProps> = ({
           icon={icon}
           className={className}
           isDisabled={isDisabled}
-          label={label}
+          label={<Text typography={typography}> {label} </Text>}
           ariaLabel={ariaLabel}
           testId={testId}
         />
@@ -58,7 +61,11 @@ export const Dropdown: FC<DropdownProps> = ({
           testId={testId}
         />
       )}
-      {options ? <Menu options={options} /> : <Menu>{children}</Menu>}
+      {options ? (
+        <Menu options={options} typography={typography} />
+      ) : (
+        <Menu>{children}</Menu>
+      )}
     </DefaultDropdown>
   );
 };

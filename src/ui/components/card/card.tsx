@@ -23,7 +23,10 @@ type PrimaryOrSecondaryCardProps =
       icon?: IconName;
     };
 
-export type CardProps = CommonProps & PrimaryOrSecondaryCardProps;
+export type CardProps = CommonProps &
+  PrimaryOrSecondaryCardProps & {
+    layout: "column" | "row";
+  };
 
 export const Card: FC<CardProps> = ({
   className,
@@ -31,6 +34,7 @@ export const Card: FC<CardProps> = ({
   type = "primary",
   header,
   icon,
+  layout,
   testId,
 }) => {
   return (
@@ -43,7 +47,7 @@ export const Card: FC<CardProps> = ({
     >
       {header}
       {icon ? <Icon name={icon} /> : undefined}
-      <Content>{children}</Content>
+      <Content layout={layout}>{children}</Content>
     </Container>
   );
 };

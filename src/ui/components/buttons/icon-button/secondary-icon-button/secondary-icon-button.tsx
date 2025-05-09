@@ -7,7 +7,9 @@ import {
 import { LocationState } from "$/ui/components/global-types";
 
 export type SecondaryIconButtonProps = IconButtonOrLinkProps &
-  Omit<CommonIconButtonProps, "actionType"> & { locationState?: LocationState };
+  Omit<CommonIconButtonProps, "actionType"> & {
+    locationState?: LocationState;
+  };
 
 export const SecondaryIconButton: FC<SecondaryIconButtonProps> = (props) => {
   return <BaseIconButton actionType="secondary" {...props} />;

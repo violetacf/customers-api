@@ -8,7 +8,7 @@ export interface ToggleWithLabelProps {
   icon: IconName;
   className?: string;
   isDisabled?: boolean;
-  label: string;
+  label: React.ReactNode;
   ariaLabel?: string;
   testId?: string;
 }

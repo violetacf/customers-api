@@ -40,13 +40,23 @@ export const Sidebar: FC<{ children: React.ReactNode }> = ({ children }) => {
         <MobileLogo size="s" logoURL={brand.logoURL} />
         <DesktopLogo size="m" logoURL={brand.logoURL} />
         {isOpen ? (
-          <CloseButton onClick={(): void => setIsOpen(false)} />
+          <CloseButton
+            aria-label="Close sidebar"
+            onClick={(): void => setIsOpen(false)}
+          />
         ) : (
-          <HamburgerButton onClick={(): void => setIsOpen(true)} icon="list" />
+          <HamburgerButton
+            aria-label="Open sidebar"
+            onClick={(): void => setIsOpen(true)}
+            icon="list"
+          />
         )}
       </SidebarHeader>
       <Wrapper $isOpen={isOpen}>
-        <NavItemsContainer data-testid={SIDEBAR_NAV_TEST_ID}>
+        <NavItemsContainer
+          data-testid={SIDEBAR_NAV_TEST_ID}
+          onClick={() => setIsOpen(false)}
+        >
           {children}
         </NavItemsContainer>
       </Wrapper>

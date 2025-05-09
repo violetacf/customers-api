@@ -41,6 +41,7 @@ export const Logo: FC<LogoProps> = ({
         $isTopiLogo={isTopiBranding(logoURL)}
         src={logoURL}
         $size={size}
+        alt="Topi logo"
       />
     );
   }

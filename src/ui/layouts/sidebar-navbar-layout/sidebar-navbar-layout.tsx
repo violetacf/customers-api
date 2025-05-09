@@ -12,6 +12,7 @@ export const SidebarNavbarLayout: FC = () => {
       <SidebarContainer>
         <Sidebar>
           <NavTab icon="user" label="Customers" to="/customers" />
+          <NavTab icon="laptop" label="Tech Exercise Notes" to="/" />
         </Sidebar>
       </SidebarContainer>
       <Main>

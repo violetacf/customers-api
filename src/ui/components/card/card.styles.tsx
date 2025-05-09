@@ -69,9 +69,25 @@ export const Container = styled.section<MappedCardContainerProps>`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled.div<CardProps>`
   align-self: var(--card-content-align);
   flex: 1;
+  display: flex;
+  justify-content: space-between;
+
+  ${({ layout: layout }) => {
+    switch (layout) {
+      case "column":
+        return css`
+          flex-direction: column;
+        `;
+      case "row":
+        return css`
+          align-items: center;
+          flex-direction: row;
+        `;
+    }
+  }};
 `;
 
 export const Icon = styled(DefaultIcon)`

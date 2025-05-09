@@ -25,4 +25,14 @@ export default defineConfig({
       $: path.resolve(__dirname, "./src"),
     },
   },
+  // Added this server config to avoid CORS errors
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:8080",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
 });
